@@ -9,5 +9,13 @@ Concepts developed in this project:
 - Development of components using Vue.js.
 - Use of Vue to list and to retrieve.
 - Use of one Vue instance as Singleton to activate reactivity in component.
-- Node.js
+- Use of Node.js to view the rendered website and interact with it.
+
+Commands to compile:
+
+1. npm install
+
+2. npm run build
+
+3. npm start
 
