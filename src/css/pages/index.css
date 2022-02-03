@@ -1,0 +1,368 @@
+* {
+    font-family: 'Righteous', cursive;
+}
+
+header {
+    background-color: white;
+}
+
+.contenidor-header {
+    display: flex;
+    align-items: center;
+    gap: 25vw;
+}
+
+.contenidor-header nav {
+    margin-left: 2vw;
+}
+
+.contenidor-header nav a {
+    display: inline-block;
+}
+
+.contenidor-header nav a img{
+    width: 9.6vw;
+    height: 6vw;
+}
+
+.contenidor-header h1 {
+    font-size: 3vw;
+    color: #2C4348;
+    text-shadow: 0.25vw 0.25vw 0.2vw grey;
+}
+
+main {
+    background-color: #C4C4C4;
+    position: relative;
+}
+
+#app{
+    background-color: #C4C4C4;
+    text-align: center;
+    align-items: center;
+}
+
+#first-search {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+
+#search {
+    border: none;
+    background-color: #99E35E;
+    margin: 1vw;
+    padding: 0.8vw;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    color: #000;
+    border-radius: 1vw;
+    box-shadow: 0px 8px 15px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+#search:hover {
+    background-color: #24c94e;
+    box-shadow: 0px 8px 15px 3px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+#input {
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 0.5vw;
+    font-style: normal;
+    font-size: 1.2vw;
+    height: 2.8vw;
+    width: 20vw;
+}
+
+article {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2.5vw;
+}
+
+#heroT {
+    background-color: #E7E7E7;  
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 60vw;
+    height: 30vw;
+}
+
+.partEsq {
+    padding-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    text-align: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.imgT {
+    width: 100%;
+    height: 86.5%;
+}
+
+.partDreta {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.roleT {
+    padding-top: 4vw;
+    padding-left: 3vw;
+    display: flex;
+}
+
+.titolRoleT{
+    margin-left: 4vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+.contingutRoleT {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7vw;
+}
+
+ #infoHero {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5vw;
+  gap: 3vw;
+}
+
+#hero {
+    background-color: #E7E7E7;  
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    gap: 2vw;
+    width: 40vw; 
+    height: 17vw; 
+}
+
+#name {
+    display: flex;
+    text-align: center;
+    font-size: 2.5vw;
+    font-style: bold;
+}
+
+.role {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 2vw;
+}
+
+.message p {
+    position: absolute;
+    top: 10vw;
+    left: 33vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+.contingutMissatge {
+    position: absolute;
+    top: 13vw;
+    left: 17vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2vw;
+    text-align: justify;
+    padding-right: 5vw;
+}
+
+ #showInfo{
+    background-color: transparent;
+    background-image: url("https://img.icons8.com/color/100/000000/plus-math.png");
+    border: none;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: none;
+    position: absolute;
+    top: 12.8vw;
+    left: 34vw;
+    height: 2vw;
+    width: 2vw;
+    cursor: pointer;
+}
+
+ #hideInfo{
+    background-color: transparent;
+    background-image: url("https://img.icons8.com/color/48/000000/minus-math.png");
+    border: none;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: none;
+    position: absolute;
+    top: 26vw;
+    left: 54vw;
+    height: 2vw;
+    width: 2vw;
+    cursor: pointer;
+}
+
+.loader {
+    position: absolute;
+    top: 12.8vw;
+    left: 34vw;
+    border: 0.6vw solid #8c9eeb; /* Light grey */
+    border-top: 0.6vw solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 1.8vw;
+    height: 1.8vw;
+    animation: spin 2s linear infinite;
+    cursor: wait;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+  /* Media queries per a que sigui responsive */
+@media screen and (max-width: 800px) {
+.contenidor-header {
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.contenidor-header nav a img {
+    margin-top: 2vw;
+    /*1.6*/
+    width: 19vw;
+    height: 11.875vw;
+}
+
+.contenidor-header h1 {
+    font-size: 5vw;
+}
+
+#first-search {
+    display: flex;
+    justify-content: center;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    align-items: center;
+    margin-bottom: 4vw;
+}
+
+#search {
+    margin: 1.9vw;
+    padding: 1.7vw;
+    font-size: 2vw;
+}
+
+#input {
+    font-size: 2.4vw;
+    height: 5.6vw;
+    width: 40vw;
+}
+
+#hero {
+    background-color: #E7E7E7;  
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    gap: 2vw;
+    width: 50vw; 
+    height: 30vw; 
+}
+
+#heroT {
+    background-color: #E7E7E7;  
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 80vw;
+    height: 46vw;
+}
+
+#showInfo{
+    top: 24.5vw;
+    left: 44vw;
+    height: 4vw;
+    width: 4vw;
+}
+
+#name {
+    display: flex;
+    text-align: center;
+    font-size: 4.375vw;
+    font-style: bold;
+}
+
+.role {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 3.5vw;
+}
+
+.loader { 
+    top: 24.5vw;
+    left: 44vw;
+    width: 4vw;
+    height: 4vw;
+}
+
+
+.titolRoleT{
+    margin-left: 8vw;
+    font-size: 3.1vw;
+    font-weight: 800;
+}
+
+.contingutRoleT {
+    font-size: 3.1vw;
+}
+
+.message p {
+    position: absolute;
+    top: 11vw;
+    left: 43vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.1vw;
+    font-weight: 800;
+}
+
+.contingutMissatge {
+    position: absolute;
+    top: 17vw;
+    left: 28vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.9vw;
+    text-align: justify;
+    padding-right: 5vw;
+}
+
+#hideInfo{
+    top: 41vw;
+    left: 74vw;
+    height: 4vw;
+    width: 4vw;
+    }
+}
+
+

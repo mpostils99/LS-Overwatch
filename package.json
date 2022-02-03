@@ -1,0 +1,37 @@
+{
+  "name": "overwatch-api",
+  "version": "1.0.0",
+  "description": "Overwatch API for Web Projects I - Project 2",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "prebuild": "del /S /Q dist",
+    "build": "node build/build.js",
+    "dev:build-watch": "node build/build-watch.js",
+    "dev:livereload": "node build/livereload.js",
+    "tot": "npm run build && npm start"
+  },
+  "keywords": [
+    "overwatch",
+    "project",
+    "2",
+    "web",
+    "projects",
+    "I"
+  ],
+  "author": "Web Projects I",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "*",
+    "vue": "^3.2.22"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "clean-css": "^5.2.1",
+    "esbuild": "^0.13.4",
+    "fs-extra": "^10.0.0",
+    "html-minifier": "^4.0.0"
+  }
+}
